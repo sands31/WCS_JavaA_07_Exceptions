@@ -21,12 +21,8 @@ public class OddSumTest {
     }
     @Test
     public void testException() throws Exception {
-    	try {
     	String[] in = {"1", "2", "3", "4", "5", "a"};
         Assert.assertEquals(-1, OddSum.run(in, true));
-    	} catch (AssertionError e) {
-    		System.err.println(e.getMessage());		
-    	}
     }
 
 }
